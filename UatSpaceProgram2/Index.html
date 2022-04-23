@@ -1,0 +1,179 @@
+<!--Bradley Alex Sedig-->
+
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+    <!--Create a backround element-->
+    <div style="width:800px; height: 900px;
+                background-color: rgb(70, 78, 88); border-radius: 30px;
+                position: relative; top: 20px;">
+                <!--Add an image to the top of the page-->
+    <img align = "top" src = "UATspaceLogo-2.jpg">
+    
+    <!--Display text as a Heading-->
+    <h1>
+        UAT Space Program
+    </h1>
+    <!--Create a backround for the top of the Table-->
+    <div style="background-color: rgb(182, 221, 253); width:700px; border: 2px solid rgb(0, 0, 0); color: rgb(24, 24, 24);">
+       <!--Create a table-->
+        <table style="position: relative; left: -8px;">
+            <!--Create a row in the table-->
+          <tr>
+              <!--Create two cells in this row-->
+              <th >Datatype</th>
+              <th>Reading</th>
+          </tr>
+          <!--End the row in the table-->
+        </table>
+        <!--End the table This will act as the heading for the table and is separated to keep it outside of the scrolling table below-->
+      </div>
+      <!--End backround for top of table-->
+      <!--Create backround For table body-->
+    <div style="height:400px; overflow:auto; width:700px;
+                border: 2px solid rgb(0, 0, 0);
+                background-image: linear-gradient(rgb(204, 236, 255), rgb(255, 255, 255));">
+    <!--Create another table below the first to contain all the data-->
+    <table>
+        <!--td = new cell-->
+        <!-- tr = new row-->
+          <td>Time elapsed:</td>
+          <td>15 seconds</td>
+        </tr>
+        <tr>
+          <td>Latitude:</td>
+          <td>0</td>
+        </tr>
+        <tr>
+            <td>Longitude:</td>
+            <td>0</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>GPS Altitude:</td>
+            <td>0</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>BMP Sensor Altitude:</td>
+            <td>30390.66</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>BMP Sensor Pressure:</td>
+            <td>3.60</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>BMP Sensor Temperature:</td>
+            <td>24.12</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Digital Sensor Temporature:</td>
+            <td>0</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>CSS Sensor Temperature:</td>
+            <td>25</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>CSS Sensor eC02:</td>
+            <td>400</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>CSS Sensor TV0C:</td>
+            <td>0</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>UV:</td>
+            <td>0.65</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Accel X:</td>
+            <td>0.6</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Accel Y:</td>
+            <td>7.52</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Accel Z:</td>
+            <td>-0.4</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Magnetic X:</td>
+            <td>0.4</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Magnetic Y:</td>
+            <td>0.4</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Magnetic Z:</td>
+            <td>0.8</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Gyro X:</td>
+            <td>-2.27</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Gyro Y:</td>
+            <td>2.84</td>
+          </tr>
+        </tr>
+        <tr>
+            <td>Gyro Z:</td>
+            <td>-0.43</td>
+          </tr>
+        </tr>
+
+      </table>
+      <!--End of body table-->
+      </div>
+      <!--End Backround for table body-->
+    <p>
+             
+    </p>
+    <!--Create Shape with backround color to act as the switch area-->
+    <div style="width:205px; height: 50px;
+                background-color: rgb(219, 219, 219); border-radius: 30px;" id = "SwitchColor">
+    <button id="StartButton">
+    Start
+   </button>  
+
+   <!--Later I want to make this launch button only appear after the countdown reaches 0. Maybe I could play a sound as well?-->
+   <button id="StopButton">
+   Stop
+  
+   </button>  
+   </div>  
+   <!--End Switch area backround-->
+<div>
+  <script src="main.js"></script>
+</body>
+
+</center>
+
+</html>
